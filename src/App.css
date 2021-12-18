@@ -26,6 +26,47 @@
   color: rgb(112, 76, 182);
 }
 
+ul {
+  list-style: none;
+}
+
+article {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+article:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
