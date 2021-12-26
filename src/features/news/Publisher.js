@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { formatTime } from "../../utils/formatTime";
 import { selectAllNews } from "./newsSlice";
 
 const Publisher = () => {
@@ -37,10 +38,7 @@ const Publisher = () => {
             <article>
               <h2>{publisher.TITLE}</h2>
               <h4>{publisher.PUBLISHER}</h4>
-              <p>
-                Published on -
-                {new Intl.DateTimeFormat("en-IN").format(publisher.TIMESTAMP)}
-              </p>
+              <p>Published on -{formatTime(publisher.TIMESTAMP)}</p>
             </article>
           </li>
         ))}
